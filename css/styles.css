@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+@import "reset.css";
+
+body {
+  background-color: mintcream;
+}
+
+.text-title {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.length-form {
+  display: none;
+}
+
+.letter-length {
+  width: 250px;
+  padding: 10px;
+}
+
+.text-input-container {
+  display: none;
+  width: 50%;
+  flex-direction: column;
+}
+
+.showing {
+  display: flex;
+}
+
+#jasoseol {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#count {
+  text-align: right;
+}
