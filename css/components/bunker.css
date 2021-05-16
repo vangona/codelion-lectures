@@ -1,0 +1,10 @@
+#bunker {
+}
+
+.unit-bunker__container {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  top: 200px;
+  left: 1200px;
+}
