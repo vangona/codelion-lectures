@@ -1,5 +1,5 @@
-let droneHp = 50;
-let bunkerHp = 50;
+let droneHp = 5;
+let bunkerHp = 5;
 
 // drone shoot
 
