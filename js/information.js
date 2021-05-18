@@ -31,7 +31,7 @@ function handleSubmit(event) {
 }
 
 function paintNames(name1, name2, date) {
-    LOVENAME.innerText = `${name1}♥${name2}`
+    LOVENAME.innerText = `${name1} ♥ ${name2}`
     LOVEDAY.innerText = `${date}`
 
     let start = new Date(`${date}`);

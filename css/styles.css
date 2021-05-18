@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Pattaya&display=swap");
+
 @import "reset.css";
 @import "variables.css";
 
@@ -15,21 +17,21 @@ p {
   align-items: center;
 }
 #kwankyoung {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 30px;
 }
 #kyoungmin {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 30px;
 }
 #heart {
-  font-size: 50px;
+  font-size: 0px;
   color: red;
 }
 
@@ -55,6 +57,18 @@ p {
 }
 
 /* edit */
+body {
+  font-family: "Nanum Myeongjo", "Pattaya", serif, sans-serif;
+  background-color: pink;
+}
+
+.header__title {
+  font-family: "Nanum Myeongjo", "Pattaya", serif, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 15px;
+}
 
 .main__container {
   display: flex;
@@ -104,10 +118,17 @@ p {
 
 .information__content {
   margin-bottom: 10px;
+  font-size: 13px;
+  padding: 5px;
 }
 
 .information__content:last-child {
   margin-bottom: 0;
+}
+
+.novel-words {
+  border-radius: 10px;
+  background-color: white;
 }
 
 .name-input__container {
@@ -131,13 +152,23 @@ p {
   width: 75%;
 }
 
+.novel-words {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  padding: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  border: 1px solid var(--gray);
+}
+
 /* 기념일칸 */
 .special-day-main__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 680px;
   height: 100%;
 }
 
