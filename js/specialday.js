@@ -1,11 +1,7 @@
-let now = new Date();
-
 const specialdayForm = document.querySelector(".special-day__form"),
     specialdayNameInput = specialdayForm.querySelector(".special-day-input__title"),
     specialdayDateInput = specialdayForm.querySelector(".special-day-input__date"),
     specialdayList = document.querySelector(".special-day-list");
-
-const SPECIALDAY_LS = "specialdays"
 
 let specialDays = [];
 
@@ -17,7 +13,6 @@ function deleteSpecialDays(event) {
         return specialday.id !== parseInt(section.id);
     });
     specialDays = cleanspecialDays;
-    console.log(cleanspecialDays)
     saveSpecialDays();
 }
 
@@ -27,18 +22,23 @@ function saveSpecialDays(){
 
 function paintSpecialDays(name, daysleft, date){
     const section = document.createElement("section");
+    const divContent = document.createElement("div");
+    const titlebox = document.createElement("div");
     const h3 = document.createElement("h3");
     const div = document.createElement("div");
     const daysLeft = document.createElement("p");
     const dateBox = document.createElement("p");
     const delBtn = document.createElement("button");
+    const divHr = document.createElement("div");
     const newId = specialDays.length + 1
 
-    delBtn.innerText = "X";
+    delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteSpecialDays);
 
     section.id = newId;
-    section.setAttribute("class", "special-day");
+    section.setAttribute("class", "special-day special-day-content");
+    divContent.setAttribute("class", "div__content");
+    titlebox.setAttribute("class", "title-box");
     h3.setAttribute("class", "title");
     h3.innerText = `${name}`;
     div.setAttribute("class", "date-box");
@@ -47,13 +47,18 @@ function paintSpecialDays(name, daysleft, date){
     daysLeft.innerText = `${daysleft}일 남음`;
     dateBox.setAttribute("class", "date");
     dateBox.innerText = date;
+    divHr.setAttribute("class", "div__hr");
 
+    titlebox.appendChild(delBtn);
+    titlebox.appendChild(h3);
     div.appendChild(daysLeft);
     div.appendChild(dateBox);
+    
+    divContent.appendChild(titlebox);
+    divContent.appendChild(div);
 
-    section.appendChild(delBtn);
-    section.appendChild(h3);
-    section.appendChild(div);
+    section.appendChild(divContent);
+    section.appendChild(divHr);
     specialdayList.appendChild(section);
     const specialDaysObj = {
         name: name,

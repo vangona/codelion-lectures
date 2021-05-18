@@ -10,7 +10,7 @@
     <!-- 사진 -->
     <section class="photos">
       <img id="kwankyoung" src="img/kwankyoung.jpg" alt="duhee" />
-      <i id="heart" class="fas fa-heart"></i>
+      <i id="heart" class="fas fa-heart showing"></i>
       <img id="kyoungmin" src="img/kyoungmin.jpg" alt="jisook" />
     </section>
 
@@ -47,56 +47,40 @@
     </div>
 
     <!-- 기념일 계산기 -->
-
-    <div class="special-day__container special-day-list">
-      <hr />
-      <section class="special-day">
-        <h3 class="title">발렌타인 데이</h3>
-        <div class="date-box">
-          <p id="valentine" class="days-left">0일 남음</p>
-          <p class="date">2021.2.14</p>
-        </div>
-      </section>
-      <hr />
-      <section class="special-day">
-        <h3 class="title">1000일</h3>
-        <div class="date-box">
-          <p id="thousand" class="days-left">0일 남음</p>
-          <p id="thousand-date" class="date">0000.00.00</p>
-        </div>
-      </section>
-      <hr />
-    </div>
-    <div class="special-day__container">
-      <form class="special-day__form special-day">
-        <input
-          type="text"
-          class="special-day-input__title"
-          placeholder="기념일 이름"
-          required
-        />
-        <div class="date-box">
-          <input type="date" class="special-day-input__date" required />
-          <button class="special-day__button">추가하기</button>
-        </div>
-      </form>
-      <hr />
-      <button class="button__clear">clear</button>
-    </div>
-    <div class="special-day__container">
-      <form class="d-day__form special-day">
-        <input
-          type="text"
-          class="d-day-input__title"
-          placeholder="기념일 이름"
-          required
-        />
-        <div class="date-box">
-          <input type="number" class="d-day-input__date" required />
-          <button class="d-day__button">추가하기</button>
-        </div>
-      </form>
-      <hr />
+    <div class="special-day-main__container hiding">
+      <div class="special-day__container special-day-list d-day-list">
+        <hr />
+      </div>
+      <div class="special-day__container">
+        <form class="special-day__form special-day">
+          <input
+            type="text"
+            class="special-day-input__title"
+            placeholder="기념일 이름"
+            required
+          />
+          <div class="date-box">
+            <input type="date" class="special-day-input__date" required />
+            <button class="special-day__button">추가하기</button>
+          </div>
+        </form>
+        <hr />
+      </div>
+      <div class="special-day__container">
+        <form class="d-day__form special-day">
+          <input
+            type="text"
+            class="d-day-input__title"
+            placeholder="기념일 이름"
+            required
+          />
+          <div class="date-box">
+            <input type="number" class="d-day-input__date" required />
+            <button class="d-day__button">추가하기</button>
+          </div>
+        </form>
+        <hr />
+      </div>
       <button class="button__clear">clear</button>
     </div>
 
@@ -111,5 +95,6 @@
     ></script>
     <script src="js/information.js"></script>
     <script src="js/specialday.js"></script>
+    <script src="js/dday.js"></script>
   </body>
 </html>
