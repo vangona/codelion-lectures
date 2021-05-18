@@ -1,0 +1,175 @@
+@import "reset.css";
+@import "variables.css";
+
+/* original */
+* {
+  color: #333333;
+}
+p {
+  margin-bottom: 1px;
+}
+.photos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kwankyoung {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#kyoungmin {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+#heart {
+  font-size: 50px;
+  color: red;
+}
+
+#love {
+  display: block;
+}
+
+.special-day {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.days-left {
+  text-align: right;
+}
+
+.date {
+  text-align: right;
+  color: var(--gray);
+}
+
+/* edit */
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 정보칸 */
+
+.start__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.information__form {
+  display: flex;
+  padding: 30px;
+  border: 1px solid var(--gray);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.information__content {
+  margin-bottom: 10px;
+}
+
+.information__content:last-child {
+  margin-bottom: 0;
+}
+
+.name-input__container {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.name-1__input {
+  margin-right: 10px;
+}
+
+.name-2__input {
+  margin-left: 10px;
+}
+
+.date-input__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 75%;
+}
+
+/* 기념일칸 */
+.special-day__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.special-day__container hr {
+  width: 100%;
+}
+
+.d-day__form,
+.special-day__form {
+  align-items: center;
+  padding: 10px;
+}
+
+.special-day-input__title {
+  height: fit-content;
+}
+
+.special-day-input__date {
+  margin-bottom: 10px;
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.love-body {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.showing {
+  display: flex;
+}
+
+.hiding {
+  display: none;
+}
+
+/* btn */
+
+button {
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.button__clear {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  bottom: -20px;
+}
