@@ -7,7 +7,7 @@ let dDays = [];
 
 function deletedDays(event) {
     const btn = event.target;
-    const section = btn.parentNode;
+    const section = btn.parentNode.parentNode.parentNode;
     ddayList.removeChild(section);
     const cleandDays = dDays.filter(function(dday){
         return dday.id !== parseInt(section.id);

@@ -7,7 +7,7 @@ let specialDays = [];
 
 function deleteSpecialDays(event) {
     const btn = event.target;
-    const section = btn.parentNode;
+    const section = btn.parentNode.parentNode.parentNode;
     specialdayList.removeChild(section);
     const cleanspecialDays = specialDays.filter(function(specialday){
         return specialday.id !== parseInt(section.id);
