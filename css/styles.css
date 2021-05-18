@@ -106,6 +106,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  max-width: 100%;
 }
 
 .information__form {
@@ -115,6 +116,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.information__form input {
+  width: 7rem;
+}
+
+.information__form input::placeholder {
+  font-size: 0.7rem;
 }
 
 .information__content {
@@ -145,7 +154,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
-  width: 75%;
+  width: 100%;
+}
+
+.date-input__container input {
+  width: 10rem;
+}
+
+.date-input__container input::placeholder {
+  font-size: 0.7rem;
 }
 
 .novel-words {
@@ -196,14 +213,16 @@ body {
 
 form.special-day input {
   width: 100px;
-  max-width: 50%;
+  font-size: 0.7rem;
+  max-width: 30%;
   padding: 3px;
   border: 1px solid var(--gray);
   border-radius: 0.5rem;
 }
 
-form.special-day > * > input {
-  max-width: 100%;
+form.special-day > * > input,
+form.special-day > * > button {
+  max-width: 80%;
 }
 
 .div__content {
@@ -233,6 +252,7 @@ form.special-day > * > input {
 
 .d-day__form,
 .special-day__form {
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
@@ -249,6 +269,7 @@ form.special-day > * > input {
 
 .date-box {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 

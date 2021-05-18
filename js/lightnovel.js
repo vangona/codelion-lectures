@@ -15,7 +15,7 @@ const NOVEL_WORDS = [
 
 const WORDS_NUMBERS = NOVEL_WORDS.length;
 
-const novelWords = function paintWord(){
+function init(){
     const randomNumber = Math.floor(Math.random() * WORDS_NUMBERS);
     if (NAMES_FORWORDS !== null) {
         words.classList.add("showing")
@@ -23,4 +23,4 @@ const novelWords = function paintWord(){
     } 
 }
 
-novelWords()
+init();

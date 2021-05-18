@@ -28,6 +28,8 @@ function handleSubmit(event) {
     LOVEBODY.classList.add("showing");
     specialDayContainer.classList.remove("hiding");
     paintNames(currentValue1, currentValue2, currentValue3);
+    const randomNumber = Math.floor(Math.random() * WORDS_NUMBERS);
+    words.innerText = NOVEL_WORDS[randomNumber];
 }
 
 function paintNames(name1, name2, date) {
