@@ -17,21 +17,21 @@ p {
   align-items: center;
 }
 #kwankyoung {
-  width: 100px;
-  height: 100px;
+  width: 7rem;
+  height: 7rem;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 30px;
 }
 #kyoungmin {
-  width: 100px;
-  height: 100px;
+  width: 7rem;
+  height: 7rem;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 30px;
 }
 #heart {
-  font-size: 0px;
+  font-size: 2rem;
   color: red;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .header__title {
   font-family: "Nanum Myeongjo", "Pattaya", serif, sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 700;
   font-style: italic;
   padding-top: 15px;
@@ -80,6 +80,7 @@ body {
   padding: 30px;
   padding-bottom: 70px;
   border: 1px solid var(--gray);
+  border-radius: 10px;
 }
 
 @keyframes float {
@@ -118,17 +119,12 @@ body {
 
 .information__content {
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 0.9rem;
   padding: 5px;
 }
 
 .information__content:last-child {
   margin-bottom: 0;
-}
-
-.novel-words {
-  border-radius: 10px;
-  background-color: white;
 }
 
 .name-input__container {
@@ -154,12 +150,14 @@ body {
 
 .novel-words {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: italic;
   padding: 20px;
   margin-top: 10px;
   line-height: 20px;
   border: 1px solid var(--gray);
+  border-radius: 10px;
+  background-color: white;
 }
 
 /* 기념일칸 */
@@ -168,7 +166,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 680px;
+  width: 400px;
   height: 100%;
 }
 
@@ -180,6 +178,12 @@ body {
   width: 100%;
 }
 
+.special-day__add {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
 .special-day {
   position: relative;
 }
@@ -187,6 +191,13 @@ body {
 .special-day-content {
   display: flex;
   flex-direction: column;
+}
+
+form.special-day input {
+  width: 100px;
+  padding: 3px;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
 }
 
 .div__content {
