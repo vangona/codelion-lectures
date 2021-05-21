@@ -46,7 +46,8 @@ function paintSpecialDays(name, daysleft, date){
     daysLeft.id = `${name}`;
     daysLeft.innerText = `${daysleft}일 남음`;
     dateBox.setAttribute("class", "date");
-    dateBox.innerText = date;
+    const specialDate = `${date.substring(0, 4)}.${date.substring(5, 7)}.${date.substring(8, 10)}`;
+    dateBox.innerText = `${specialDate}`;
     divHr.setAttribute("class", "div__hr");
 
     titlebox.appendChild(delBtn);

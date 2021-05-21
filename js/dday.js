@@ -13,7 +13,6 @@ function deletedDays(event) {
         return dday.id !== parseInt(section.id);
     });
     dDays = cleandDays;
-    console.log(cleandDays)
     savedDays();
 }
 
@@ -78,13 +77,12 @@ function handleSubmit(event) {
     const loadedStart = localStorage.getItem("names");
     const parsedStart = JSON.parse(loadedStart)
     start = new Date(`${parsedStart[2]}`);
-    ddayms = start.getTime() + (currentDateValue - 1) * (1000 * 60 * 60 * 24);
+    ddayms = start.getTime() + (currentDateValue) * (1000 * 60 * 60 * 24);
     ddayDate = new Date(ddayms);
     dday = `${
         ddayDate.getFullYear() < 10 ? `0${ddayDate.getFullYear()}` : ddayDate.getFullYear()}.${
-        ddayDate.getMonth() < 10 ? `0${ddayDate.getMonth()}` : ddayDate.getMonth()}.${
-            ddayDate.getDate() < 10 ? `0${ddayDate.getDate()}` : ddayDate.getDate()}`;
-
+        ddayDate.getMonth() + 1 < 10 ? `0${ddayDate.getMonth() + 1}` : ddayDate.getMonth() + 1}.${
+        ddayDate.getDate() < 10 ? `0${ddayDate.getDate()}` : ddayDate.getDate()}`;
     let timeDiff = ddayDate.getTime() - now.getTime()
     let dayleft = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
     paintdDays(currentNameValue, dayleft, dday);
