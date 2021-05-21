@@ -25,3 +25,12 @@ article {
   width: 320px;
   margin: 0 auto;
 }
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img {
+  width: 320px;
+}
