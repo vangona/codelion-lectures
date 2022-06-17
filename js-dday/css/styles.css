@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Pattaya&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* original */
+* {
+  color: #333333;
+}
+p {
+  margin-bottom: 1px;
+}
+.photos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kwankyoung {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#kyoungmin {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+#heart {
+  font-size: 2rem;
+  color: red;
+}
+
+#love {
+  display: block;
+}
+
+.special-day {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.days-left {
+  text-align: right;
+}
+
+.date {
+  text-align: right;
+  color: var(--gray);
+}
+
+/* edit */
+body {
+  font-family: "Nanum Myeongjo", "Pattaya", serif, sans-serif;
+  background-color: pink;
+}
+
+.header__title {
+  font-family: "Nanum Myeongjo", "Pattaya", serif, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 15px;
+}
+
+.main__container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+  padding-bottom: 70px;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.fa-heart.showing {
+  animation: float 1s ease-in-out infinite;
+}
+
+/* 정보칸 */
+
+.start__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  max-width: 100%;
+}
+
+.information__form {
+  display: flex;
+  padding: 30px;
+  border: 1px solid var(--gray);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.information__form input {
+  width: 7rem;
+}
+
+.information__form input::placeholder {
+  font-size: 0.7rem;
+}
+
+.information__content {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.information__content:last-child {
+  margin-bottom: 0;
+}
+
+.name-input__container {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.name-1__input {
+  margin-right: 10px;
+}
+
+.name-2__input {
+  margin-left: 10px;
+}
+
+.date-input__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.date-input__container input {
+  width: 10rem;
+}
+
+.date-input__container input::placeholder {
+  font-size: 0.7rem;
+}
+
+.novel-words {
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* 기념일칸 */
+.special-day-main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.special-day__container {
+  width: 75%;
+}
+
+.special-day__container hr {
+  width: 100%;
+}
+
+.special-day__add {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.special-day {
+  position: relative;
+}
+
+.special-day-content {
+  display: flex;
+  flex-direction: column;
+}
+
+form.special-day input {
+  width: 100px;
+  font-size: 0.7rem;
+  max-width: 30%;
+  padding: 3px;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+}
+
+form.special-day > * > input,
+form.special-day > * > button {
+  max-width: 80%;
+}
+
+.div__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+}
+
+.title-box > button {
+  font-size: 3px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.div__hr {
+  margin: 0.5rem 0;
+  height: 0.5px;
+  width: 100%;
+  background-color: var(--gray);
+}
+
+.d-day__form,
+.special-day__form {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.d-day-input__title,
+.special-day-input__title {
+  height: fit-content;
+}
+
+.d-day-input__date,
+.special-day-input__date {
+  margin-bottom: 10px;
+}
+
+.date-box {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.love-body {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.showing {
+  display: flex;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.hiding {
+  display: none;
+}
+
+/* btn */
+
+button {
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.button__clear {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
