@@ -1,0 +1,35 @@
+@import "reset.css";
+
+@import "components/bunker.css";
+@import "components/drone.css";
+@import "components/spit.css";
+@import "components/hp.css";
+@import "components/explainer.css";
+
+body {
+  position: relative;
+  background-image: url("../images/background.png");
+}
+
+.unit__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__container {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  display: flex;
+}
+
+.header__title {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
