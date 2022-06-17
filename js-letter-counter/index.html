@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글자수 계산기</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body class="container">
+    <h1 class="text-title">글자수 계산기</h1>
+    <form class="length-form showing">
+      <input
+        class="letter-length"
+        type="text"
+        placeholder="제한 글자수를 입력해주세요. (공백 제외)"
+      />
+    </form>
+    <div class="text-input-container">
+      <textarea
+        id="jasoseol"
+        onkeyup="counter();"
+        rows="10"
+        placeholder="내용을 입력해주세요."
+      ></textarea>
+      <span id="count">(0/200)</span>
+    </div>
+    <script src="js/counter.js"></script>
+  </body>
+</html>
